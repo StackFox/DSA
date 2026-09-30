@@ -63,6 +63,7 @@
 
 #include <iostream>
 #include <vector>
+#include <climits>
 using namespace std;
 
 int secondSmallest(vector<int> &arr)
@@ -93,7 +94,8 @@ int secondLargest(vector<int> &arr)
     if (arr.size() < 2)
         return -1;
 
-    int large = INT_MIN, second_large = INT_MIN;
+    int large = INT_MIN; 
+    int second_large = INT_MIN;
 
     for (int i = 0; i < arr.size(); i++)
     {
